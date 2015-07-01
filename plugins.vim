@@ -7,3 +7,4 @@ let g:syntastic_python_flake8_exec='/usr/bin/flake8-python2'
 
 " Airline
 let g:airline#extensions#tabline#enabled=1
+let g:airline#extensions#syntastic#enabled=1
