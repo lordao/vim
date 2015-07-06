@@ -1,28 +1,20 @@
-let vundle_readme=expand($HOME.'/.vim/bundle/Vundle.vim/README.md')
-if !filereadable(vundle_readme)
-    echo "Installing Plugin.."
+let plug_vim=expand($HOME.'/.vim/autoload/plug.vim')
+if !filereadable(plug_vim)
+    echo "Installing vim-plug..."
     echo ""
-    silent !mkdir -p $HOME/.vim/bundle
-    silent !git clone https://github.com/gmarik/vundle $HOME/.vim/bundle/Vundle.vim
+    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 endif
 
-set nocompatible              " be iMproved, required
-filetype off                  " required
+call plug#begin('~/.vim/plugged')
 
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+Plug 'altercation/vim-colors-solarized'
+Plug 'bling/vim-airline'
+Plug 'easymotion/vim-easymotion'
+Plug 'keith/swift.vim'
+Plug 'scrooloose/syntastic'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'Valloric/YouCompleteMe'
+Plug 'Yggdroot/indentLine'
 
-Plugin 'gmarik/Vundle.vim'
-
-Plugin 'altercation/vim-colors-solarized'
-Plugin 'bling/vim-airline'
-Plugin 'easymotion/vim-easymotion'
-Plugin 'keith/swift.vim'
-Plugin 'scrooloose/syntastic'
-Plugin 'tpope/vim-fugitive'
-Plugin 'tpope/vim-surround'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'Yggdroot/indentLine'
-
-call vundle#end()            " required
-filetype plugin indent on    " required
+call plug#end()            " required
