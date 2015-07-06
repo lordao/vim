@@ -14,17 +14,14 @@ call vundle#begin()
 
 Plugin 'gmarik/Vundle.vim'
 
-Plugin 'keith/swift.vim'
-Plugin 'tpope/vim-fugitive'
-Plugin 'easymotion/vim-easymotion'
-Plugin 'scrooloose/syntastic'
-Plugin 'Valloric/YouCompleteMe'
-Plugin 'bling/vim-airline'
-Plugin 'Yggdroot/indentLine'
-
-"Themes
 Plugin 'altercation/vim-colors-solarized'
-
+Plugin 'bling/vim-airline'
+Plugin 'easymotion/vim-easymotion'
+Plugin 'keith/swift.vim'
+Plugin 'scrooloose/syntastic'
+Plugin 'tpope/vim-fugitive'
+Plugin 'Valloric/YouCompleteMe'
+Plugin 'Yggdroot/indentLine'
 
 call vundle#end()            " required
 filetype plugin indent on    " required
