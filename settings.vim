@@ -3,9 +3,13 @@ set title
 "Editor
 syntax enable
 set autochdir "Change directory to current file
+
+"  Force Airline to show up
+set laststatus=2
+
 "  Look and feel
 set number
-set background=light
+set background=dark
 colorscheme solarized
 "  Search
 set hlsearch
