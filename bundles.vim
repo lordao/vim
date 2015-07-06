@@ -20,6 +20,7 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'keith/swift.vim'
 Plugin 'scrooloose/syntastic'
 Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-surround'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'Yggdroot/indentLine'
 
