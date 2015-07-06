@@ -16,10 +16,11 @@ Plugin 'gmarik/Vundle.vim'
 
 Plugin 'keith/swift.vim'
 Plugin 'tpope/vim-fugitive'
-Plugin 'Lokaltog/vim-easymotion'
+Plugin 'easymotion/vim-easymotion'
 Plugin 'scrooloose/syntastic'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'bling/vim-airline'
+Plugin 'Yggdroot/indentLine'
 
 "Themes
 Plugin 'altercation/vim-colors-solarized'
