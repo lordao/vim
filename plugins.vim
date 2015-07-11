@@ -1,5 +1,8 @@
 " Syntastic
 let g:syntastic_python_checkers=['pylint', 'flake8']
+let g:syntastic_error_symbol='✗'
+let g:syntastic_warning_symbol='⚠'
+
 "  Python2 stuff for Arch Linux
 let g:syntastic_python_exec='/usr/bin/python2'
 let g:syntastic_python_pylint_exec='/usr/bin/pylint2'
