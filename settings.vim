@@ -1,8 +1,12 @@
 set title
+set hid                            " you can change buffers without saving
+set ttyfast                        " smoother changes
 
 "Editor
 syntax enable
 set autochdir "Change directory to current file
+set cursorline
+let &sbr = nr2char(8618).' ' " Show ↪ at the beginning of wrapped lines
 
 "  Force Airline to show up
 set laststatus=2
@@ -10,13 +14,18 @@ set laststatus=2
 "  Look and feel
 set number
 set background=dark
+let g:solarized_termtrans=1
+call togglebg#map("F5")
 colorscheme solarized
+
 "  Search
 set hlsearch
 set incsearch
 
 
 "Formatting
+set autoindent
+set copyindent
 set expandtab
 set softtabstop=4
 set shiftwidth=4
