@@ -17,6 +17,11 @@ set background=dark
 let g:solarized_termtrans=1
 call togglebg#map("F5")
 colorscheme solarized
+"    Remove GUI widgets
+set guioptions-=m
+set guioptions-=T
+set guioptions-=r
+set guioptions-=L
 
 "  Search
 set hlsearch
