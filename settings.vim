@@ -15,7 +15,6 @@ set laststatus=2
 set number
 set background=dark
 let g:solarized_termtrans=1
-let g:solarized_termcolors=256
 call togglebg#map("F5")
 colorscheme solarized
 "    Remove GUI widgets
