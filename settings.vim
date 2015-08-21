@@ -1,6 +1,7 @@
 set title
 set hid                            " you can change buffers without saving
 set ttyfast                        " smoother changes
+set shell=/bin/bash                " Avoid incompatibilities with fish
 
 "Editor
 syntax enable
