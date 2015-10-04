@@ -1,21 +1,23 @@
-" Syntastic
-let g:syntastic_python_checkers=['pylint', 'flake8']
-let g:syntastic_error_symbol='✗'
-let g:syntastic_warning_symbol='⚠'
+let plug_vim=expand($HOME.'/.vim/autoload/plug.vim')
+if !filereadable(plug_vim)
+    echo "Installing vim-plug..."
+    echo ""
+    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+endif
 
-"  Python2 stuff for Arch Linux
-let g:syntastic_python_exec='/usr/bin/python2'
-let g:syntastic_python_pylint_exec='/usr/bin/pylint2'
-let g:syntastic_python_flake8_exec='/usr/bin/flake8-python2'
+call plug#begin('~/.vim/plugged')
 
-" Airline
-let g:airline#extensions#tabline#enabled=1
-let g:airline#extensions#syntastic#enabled=1
+Plug 'airblade/vim-gitgutter'
+Plug 'altercation/vim-colors-solarized'
+Plug 'bling/vim-airline'
+Plug 'captbaritone/better-indent-support-for-php-with-html', { 'for': 'php' }
+Plug 'easymotion/vim-easymotion'
+Plug 'keith/swift.vim', { 'for': 'swift' }
+Plug 'Raimondi/delimitMate'
+Plug 'scrooloose/syntastic'
+Plug 'tpope/vim-fugitive'
+Plug 'tpope/vim-surround'
+Plug 'Valloric/YouCompleteMe'
+Plug 'Yggdroot/indentLine'
 
-" indentLine
-let g:indentLine_char='┆'
-"   Colors
-let g:indentLine_color_term=239      " Vim
-let g:indentLine_color_gui='#A4E57E' " GVim
-let g:indentLine_color_tty_light=7   " No X
-let g:indentLine_color_dark=1        " No X
+call plug#end()            " required
