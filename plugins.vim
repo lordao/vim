@@ -1,11 +1,11 @@
-let plug_vim=expand($HOME.'/.vim/autoload/plug.vim')
+let plug_vim=expand($HOME.'/.nvim/autoload/plug.vim')
 if !filereadable(plug_vim)
     echo "Installing vim-plug..."
     echo ""
-    silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+    silent !curl -fLo ~/.nvim/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 endif
 
-call plug#begin('~/.vim/plugged')
+call plug#begin('~/.nvim/plugged')
 
 Plug 'airblade/vim-gitgutter'
 Plug 'altercation/vim-colors-solarized'
