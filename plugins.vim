@@ -13,6 +13,7 @@ Plug 'bling/vim-airline'
 Plug 'captbaritone/better-indent-support-for-php-with-html', { 'for': 'php' }
 Plug 'easymotion/vim-easymotion'
 Plug 'keith/swift.vim', { 'for': 'swift' }
+Plug 'kien/ctrlp.vim'
 Plug 'Raimondi/delimitMate'
 Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-fugitive'
