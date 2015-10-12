@@ -1,7 +1,7 @@
 " The Silver Searcher
 if executable('ag')
-    " Use ag over grep
-    set grepprg=ag\ --nogroup\ --nocolor
+  " Use ag over grep
+  set grepprg=ag\ --nogroup\ --nocolor
 endif
 
 set title
@@ -22,13 +22,7 @@ set laststatus=2
 set number
 set background=dark
 let g:solarized_termtrans=1
-call togglebg#map("F5")
 colorscheme solarized
-"    Remove GUI widgets
-set guioptions-=m
-set guioptions-=T
-set guioptions-=r
-set guioptions-=L
 
 "  Search
 set hlsearch
@@ -39,8 +33,8 @@ set incsearch
 set autoindent
 set copyindent
 set expandtab
-set softtabstop=4
-set shiftwidth=4
+set softtabstop=2
+set shiftwidth=2
 
 "No error bleeps
 set novisualbell
