@@ -14,11 +14,15 @@ Plug 'captbaritone/better-indent-support-for-php-with-html', { 'for': 'php' }
 Plug 'easymotion/vim-easymotion'
 Plug 'keith/swift.vim', { 'for': 'swift' }
 Plug 'kien/ctrlp.vim'
-Plug 'Raimondi/delimitMate'
 Plug 'scrooloose/syntastic'
 Plug 'tpope/vim-fugitive'
 Plug 'tpope/vim-surround'
 Plug 'Valloric/YouCompleteMe'
 Plug 'Yggdroot/indentLine'
 
+Plug 'othree/html5.vim', { 'for': 'html' }
+Plug 'skammer/vim-css-color', { 'for': 'css' }
+Plug 'alvan/vim-closetag'
+Plug 'edsono/vim-matchit'
+Plug 'jiangmiao/auto-pairs'
 call plug#end()            " required
